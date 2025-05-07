@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Tienda</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Tienda Gamer</h1>
+      <a href="javascript:void(0)" id="icono-carrito" onclick="cerrarAbrirCarrito()">
+        <img src="./assets/bolsa-de-la-compra.png" alt="Carrito" class="navbar-icon">
+        <span id="contadorCarrito">0</span>
+      </a>
+    
+    
+</nav>
+    <div id="productos" class="contenedor-productos"></div>
+
+    <div id="carrito-menu-modal" class="hidden" style="display:none; position:fixed; top:10%; right:10%; width:300px; background:#fff; border:1px solid #ccc; padding:1rem; z-index:1000;color: black;">
+      <h3>Tu Carrito</h3>
+      <ul id="lista-carrito"></ul>
+      <p><strong>Total a pagar:</strong> $<span id="total-carrito">0.00</span></p>
+      <button id="finalizar-compra">Finalizar Compra</button>
+      <button id="cerrar-carrito">Cerrar</button>
+      <button id="vaciar-carrito">Vaciar carrito</button>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+
+body {
+  font-family:"Nunito", sans-serif;
+  background-image: url(./assets/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1rem; 
+
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+#contadorCarrito{
+  color: #fff;
+}
+
+h1{
+  font-family: "Alfa Slab One", serif;
+  color:  #fff;
+  font-style: normal;
+  letter-spacing: 0.10rem;
+  font-size: 2rem;
+;
+}
+h1{
+  text-align: center;
+}
+.producto {
+  width: 350px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  border: 3px solid;
+  border-radius: 15px;
+  background-color: #241358;
+  color: white;
+}
+.producto img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+button {
+  cursor: pointer;
+}
+.contenedor-productos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 5px;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 10px;
+}
+.contenedor-productos p{
+  text-align: center;
+}
+
+.producto {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+  transform: translateY(-10px);
+}
+.carrito{
+  background-color:  #241358;
+  text-align: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#carrito-menu-modal button {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.img-carrito {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+.carrito p {
+  flex-grow: 1; 
+  margin: 0;
+  font-size: 16px;
+}
+.carrito button {
+  padding: 5px 10px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#carrito-menu-modal {
+  display: none;
+  position: fixed;
+  width: 800px; 
+  max-width: 90%; 
+  max-height: 500px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  z-index: 1000;
+  color: black;
+  overflow-y: auto;
+  border-radius: 10px;
+  text-align: center;
+}
